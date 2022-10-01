@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+:root {
+  --Primary: hsl(180, 66%, 49%);
+  --Primary-dark: hsl(257, 27%, 26%);
+  --Secondary: hsl(0, 87%, 67%);
+  --Neutral-Gray: hsl(0, 0%, 75%);
+  --Neutral-Grayish-Violet: hsl(257, 7%, 63%);
+  --Neutral-Very-Dark-Blue: hsl(255, 11%, 22%);
+  --Neutral-Very-Dark-Violet: hsl(260, 8%, 14%);
+  --font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer-container {
+  max-width: 1440px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+ul {
+  list-style: none;
+}
+li {
+  text-align: justify;
+}
+.footer {
+  background-color: var(--Neutral-Very-Dark-Violet);
+  padding: 70px 0;
+}
+.footer-col {
+  width: 15%;
+  padding: 0 15px;
+}
+.footer-logo {
+  -webkit-filter: brightness(12);
+}
+
+.footer-col h4,
+h1 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: absolute;
+  font-family: var(--font-family);
+}
+.footer-col ul {
+  margin-top: 18%;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  font-family: var(--font-family);
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: var(--Primary);
+  padding-left: 8px;
+}
+
+.social-links svg:hover {
+  color: #24262b;
+  fill: var(--Primary);
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-links > svg {
+  width: 35px;
+  height: 35px;
+  fill: white;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    max-width: unset !important;
+    margin: unset !important;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: unset !important;
+    gap: 22px;
+    flex-direction: column;
+  }
+  .footer-col {
+    width: unset !important;
+  }
+}
