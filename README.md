@@ -19,6 +19,6 @@ Or
 
 
 
-## Enjoy using our Shortly App . 
+## Enjoy using my Shortly App . 
 
 ## thanks for reading . 
